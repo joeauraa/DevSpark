@@ -48,3 +48,8 @@ Languages are executed in sandboxed environments to ensure safety and performanc
 git clone https://github.com/YourUsername/DevSpark.git
 cd DevSpark
 
+
+
+© 2025 DevSpark. All rights reserved.
+Developer / Yousef Magdy @joeauraa
+
