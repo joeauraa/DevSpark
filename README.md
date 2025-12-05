@@ -1,22 +1,25 @@
 # DevSpark — Online Multi-Language Code Editor
 
-DevSpark is a modern browser-based code editor that allows developers to write, run, and test code instantly in multiple programming languages — without installing anything on their device.
+DevSpark is a modern browser-based code editor that allows developers to write, run, and test code instantly in multiple programming languages — with zero installation required.
+
+---
 
 ## 🚀 Features
 
 ### 🔥 Instant Execution
-Run your code in real-time and view output instantly with no setup required.
+Run your code in real-time and view the output instantly with no setup needed.
 
 ### 🌐 Browser-Based
-Everything runs directly in your browser. Access your code editor from any device, anywhere.
+Everything runs directly inside your browser.  
+Access your editor from any device, anytime.
 
 ### 🧠 Smart Code Editor
 - Syntax highlighting  
 - Line numbering  
-- Clean and modern UI  
-- Error display and output console  
+- Clean modern UI  
+- Built-in output & error console  
 
-### 🛠️ Multi-Language Support
+### 🛠️ Supported Languages
 DevSpark currently supports:
 
 - JavaScript  
@@ -35,12 +38,14 @@ DevSpark currently supports:
 - SQL  
 - JSON  
 
+---
 
- 
 ## ⚙️ How It Works
 
-DevSpark runs code by sending the user’s input to a backend execution API securely isolated from the browser.  
-Languages are executed in sandboxed environments to ensure safety and performance.
+DevSpark sends the user’s code securely to a backend execution API, where it is processed inside sandboxed environments for safety, speed, and isolation.  
+The execution result is then returned instantly to the browser.
+
+---
 
 ## 📦 Installation (Optional for Local Development)
 
@@ -48,8 +53,6 @@ Languages are executed in sandboxed environments to ensure safety and performanc
 git clone https://github.com/YourUsername/DevSpark.git
 cd DevSpark
 
-
-
 © 2025 DevSpark. All rights reserved.
-Developer / Yousef Magdy @joeauraa
+Developer: Yousef Magdy — @joeauraa
 
