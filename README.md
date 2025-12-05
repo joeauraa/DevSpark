@@ -53,6 +53,7 @@ The execution result is then returned instantly to the browser.
 git clone https://github.com/YourUsername/DevSpark.git
 cd DevSpark
 
+---------------------------------------------------
 © 2025 DevSpark. All rights reserved.
 Developer: Yousef Magdy — @joeauraa
 
