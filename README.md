@@ -47,13 +47,16 @@ The execution result is then returned instantly to the browser.
 
 ---
 
+### 🛠️ Screenshots
+
+<img width="1911" height="904" alt="image" src="https://github.com/user-attachments/assets/30438600-04a0-40b8-9d90-74855acdd531" />
+
+---
+
+
+
 ## 📦 Installation (Optional for Local Development)
 
 ```bash
 git clone https://github.com/YourUsername/DevSpark.git
 cd DevSpark
-
----------------------------------------------------
-© 2025 DevSpark. All rights reserved.
-Developer: Yousef Magdy — @joeauraa
-
