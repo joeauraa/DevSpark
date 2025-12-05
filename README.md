@@ -35,13 +35,16 @@ DevSpark currently supports:
 - SQL  
 - JSON  
 
-## 📷 Screenshots
 
-### Main Editor  
-*(Add your screenshot here)*
+ 
+## ⚙️ How It Works
 
-### Landing Page  
-*(Add your screenshot here)*
+DevSpark runs code by sending the user’s input to a backend execution API securely isolated from the browser.  
+Languages are executed in sandboxed environments to ensure safety and performance.
 
-## 🏗️ Project Structure
+## 📦 Installation (Optional for Local Development)
+
+```bash
+git clone https://github.com/YourUsername/DevSpark.git
+cd DevSpark
 
