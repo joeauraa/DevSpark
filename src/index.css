@@ -1,5 +1,24 @@
-/* stylelint-disable at-rule-no-unknown */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* stylelint-enable at-rule-no-unknown */
+
+/* REMOVE WHITE LINE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    to bottom right,
+    #020617,  /* slate-950 */
+    #172554,  /* blue-950 */
+    #020617   /* slate-950 */
+  );
+  overflow-x: hidden;
+}

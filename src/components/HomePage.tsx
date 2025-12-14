@@ -1,4 +1,27 @@
-import { Code2, Zap, Globe, FileCode, Play, Terminal, Hexagon, Box, Coffee, Type, Braces, Gem, Package, Cog, Server, FileJson, Smartphone, Layers, Github as GithubIcon, Facebook as FacebookIcon, Instagram as InstagramIcon, Mail } from 'lucide-react';
+import {
+  Code2,
+  Zap,
+  Globe,
+  FileCode,
+  Play,
+  Terminal,
+  Hexagon,
+  Box,
+  Coffee,
+  Type,
+  Braces,
+  Gem,
+  Package,
+  Cog,
+  Server,
+  FileJson,
+  Smartphone,
+  Layers,
+  Github as GithubIcon,
+  Facebook as FacebookIcon,
+  Instagram as InstagramIcon,
+  Mail
+} from 'lucide-react';
 
 interface HomePageProps {
   onStartCoding: () => void;
@@ -34,48 +57,59 @@ export default function HomePage({ onStartCoding }: HomePageProps) {
     {
       icon: <Globe className="w-8 h-8" />,
       title: 'Browser-Based',
-      description: 'No installation required. Code anywhere, anytime, from any device'
+      description: 'No installation required. Code anywhere, anytime'
     },
     {
       icon: <FileCode className="w-8 h-8" />,
       title: 'Smart Editor',
-      description: 'Modern code editor with line numbers and syntax highlighting'
+      description: 'Modern editor with syntax highlighting & line numbers'
     }
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-      <nav className="border-b border-slate-700 bg-slate-900/50 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex items-center gap-3">
-            <Terminal className="w-8 h-8 text-emerald-400" />
-            <h1 className="text-2xl font-bold text-white">DevSpark </h1>
-          </div>
-        </div>
-      </nav>
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950">
+{/* NAVBAR */}
+<nav className="border-b border-slate-800 bg-slate-900/60 backdrop-blur-md">
+  <div className="max-w-7xl mx-auto px-6 py-4 flex items-center gap-3">
+    
+    <img
+      src="/favicon.png"
+      alt="DevSpark Logo"
+      className="w-10 h-10"
+    />
 
+    <h1 className="text-2xl font-bold text-white tracking-wide">
+      DevSpark
+    </h1>
+
+  </div>
+</nav>
+
+      {/* HERO */}
       <main className="max-w-7xl mx-auto px-6 py-16">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full px-4 py-2 mb-6">
-            <Play className="w-4 h-4 text-emerald-400" />
-            <span className="text-emerald-400 text-sm font-medium">Execute Code Online</span>
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-2 mb-6">
+            <Play className="w-4 h-4 text-blue-400" />
+            <span className="text-blue-400 text-sm font-medium">
+              Execute Code Online
+            </span>
           </div>
 
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
             Code Editor for
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
               Every Developer
             </span>
           </h2>
 
           <p className="text-xl text-slate-400 mb-10 max-w-2xl mx-auto">
-            Write, run, and test code in multiple programming languages directly in your browser.
-            No setup required.
+            Write, run, and test code in multiple programming languages —
+            directly in your browser.
           </p>
 
           <button
             onClick={onStartCoding}
-            className="group inline-flex items-center gap-3 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-emerald-600 hover:to-cyan-600 transition-all duration-200 shadow-lg shadow-emerald-500/25 hover:shadow-xl hover:shadow-emerald-500/40 hover:scale-105"
+            className="group inline-flex items-center gap-3 bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30"
           >
             <Code2 className="w-6 h-6" />
             Start Coding Now
@@ -83,88 +117,87 @@ export default function HomePage({ onStartCoding }: HomePageProps) {
           </button>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        {/* FEATURES */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:border-emerald-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/10"
+              className="bg-slate-900/60 backdrop-blur border border-slate-800 rounded-2xl p-6 transition-all duration-300 hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/10"
             >
-              <div className="text-emerald-400 mb-4">{feature.icon}</div>
-              <h3 className="text-white font-semibold text-lg mb-2">{feature.title}</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">{feature.description}</p>
+              <div className="text-blue-400 mb-4">{feature.icon}</div>
+              <h3 className="text-white font-semibold text-lg mb-2">
+                {feature.title}
+              </h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>
 
-        <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-8">
-          <h3 className="text-white text-2xl font-bold mb-6 text-center">
+        {/* LANGUAGES */}
+        <div className="bg-slate-900/60 backdrop-blur border border-slate-800 rounded-2xl p-8">
+          <h3 className="text-white text-2xl font-bold mb-8 text-center">
             Supported Languages
           </h3>
+
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {languages.map((lang, index) => (
               <div
                 key={index}
-                className="bg-slate-900/50 border border-slate-600 rounded-lg px-4 py-3 hover:border-emerald-500/50 hover:bg-slate-900 transition-all duration-200"
+                className="bg-slate-950/60 border border-slate-800 rounded-xl px-4 py-3 transition-all duration-200 hover:border-blue-500/50 hover:scale-105"
               >
                 <div className="flex items-center justify-center gap-2">
-                  <span className="text-emerald-400">{lang.icon}</span>
-                  <span className="text-slate-300 font-medium text-sm">{lang.name}</span>
+                  <span className="text-blue-400">{lang.icon}</span>
+                  <span className="text-slate-300 text-sm font-medium">
+                    {lang.name}
+                  </span>
                 </div>
               </div>
             ))}
           </div>
 
+          {/* ABOUT */}
+          <div className="border-t border-slate-800/60 mt-10 pt-8 text-center">
+            <div className="flex items-center justify-center gap-2 text-slate-300 mb-3">
+              <Code2 className="w-5 h-5 text-blue-400" />
+              <h3 className="text-lg font-semibold">About Developer</h3>
+            </div>
 
+            <p className="text-slate-400 max-w-2xl mx-auto text-sm leading-relaxed">
+              Developed by <span className="text-white font-medium">Yousef Magdy</span> —
+              Web Developer, Python Programmer, PCB Designer,
+              Robotics & Cyber Security Specialist with 5+ years of experience.
+            </p>
 
-
-
-          
-          <div className="border-t border-slate-800/50 pt-8">
-            <div className="flex flex-col items-center gap-4">
-              <div className="flex items-center gap-2 text-slate-300">
-                <Code2 className="w-5 h-5 text-[#3b82f6]" />
-                <h3 className="text-lg font-semibold">About Developer</h3>
-              </div>
-              <p className="text-slate-400 text-center max-w-2xl text-sm leading-relaxed">
-                Developed by <span className="text-white font-medium">Yousef Magdy</span> — Yousef Magdy is a skilled Web Developer, Python Programmer, PCB Designer, and Robotics & Cyber Security Specialist with over 5 years of experience in HTML, CSS, Java, and Python, creating secure and innovative digital solutions 
-              </p>
-
-              <div className="flex flex-wrap items-center justify-center gap-4 mt-4">
-                <a href="https://github.com/joeauraa" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/50 rounded-lg text-slate-300 hover:text-white transition-all duration-200 hover:scale-105">
-                  <GithubIcon className="w-4 h-4" />
-                  <span className="text-sm font-medium">GitHub</span>
+            <div className="flex flex-wrap justify-center gap-4 mt-6">
+              {[
+                { icon: <GithubIcon />, label: 'GitHub', href: 'https://github.com/joeauraa' },
+                { icon: <FacebookIcon />, label: 'Facebook', href: 'https://facebook.com/share/1BQEwhbSXg/' },
+                { icon: <InstagramIcon />, label: 'Instagram', href: 'https://instagram.com/joeauraa' },
+                { icon: <Mail />, label: 'Contact', href: 'mailto:yousefmagdyhassann@gmail.com' }
+              ].map((item, i) => (
+                <a
+                  key={i}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-2 bg-slate-900/60 border border-slate-800 rounded-lg text-slate-300 transition-all hover:text-white hover:border-blue-500/50 hover:scale-105"
+                >
+                  {item.icon}
+                  <span className="text-sm font-medium">{item.label}</span>
                 </a>
-
-                <a href="https://facebook.com/share/1BQEwhbSXg/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/50 rounded-lg text-slate-300 hover:text-white transition-all duration-200 hover:scale-105">
-                  <FacebookIcon className="w-4 h-4" />
-                  <span className="text-sm font-medium">Facebook</span>
-                </a>
-
-                <a href="https://instagram.com/joeauraa" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/50 rounded-lg text-slate-300 hover:text-white transition-all duration-200 hover:scale-105">
-                  <InstagramIcon className="w-4 h-4" />
-                  <span className="text-sm font-medium">Instagram</span>
-                </a>
-
-                <a href="mailto:yousefmagdyhassann@gmail.com" className="flex items-center gap-2 px-4 py-2 bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/50 rounded-lg text-slate-300 hover:text-white transition-all duration-200 hover:scale-105">
-                  <Mail className="w-4 h-4" />
-                  <span className="text-sm font-medium">Contact</span>
-                </a>
-              </div>
+              ))}
             </div>
           </div>
         </div>
-
-
-        
       </main>
-      
 
-      <footer className="border-t border-slate-700 mt-20">
-        <div className="max-w-7xl mx-auto px-6 py-8">
-          <p className="text-center text-slate-400 text-sm py-6 border-t border-slate-800/50 mt-8">
-            © 2026 <span className="font-semibold text-white">DevSpark™</span>. All Rights Reserved.
-          </p>
-        </div>
+      {/* FOOTER */}
+      <footer className="border-t border-slate-800">
+        <p className="text-center text-slate-400 text-sm py-8">
+          © 2026 <span className="text-white font-semibold">DevSpark™</span>. All Rights Reserved.
+        </p>
       </footer>
     </div>
   );

@@ -25,7 +25,11 @@ export default function Header({
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-3">
-            <Code2 className="w-8 h-8 text-blue-500" />
+<img
+      src="/favicon.png"
+      alt="DevSpark Logo"
+      className="w-10 h-10"
+    />
             <h1 className="text-2xl font-bold text-white">DevSpark</h1>
           </div>
           <div className="h-8 w-px bg-slate-700" />
