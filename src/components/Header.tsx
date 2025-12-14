@@ -26,7 +26,7 @@ export default function Header({
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-3">
 <img
-      src="/favicon.png"
+      src="/PICS/favicon.png"
       alt="DevSpark Logo"
       className="w-10 h-10"
     />

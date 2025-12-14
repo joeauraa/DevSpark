@@ -73,7 +73,7 @@ export default function HomePage({ onStartCoding }: HomePageProps) {
   <div className="max-w-7xl mx-auto px-6 py-4 flex items-center gap-3">
     
     <img
-      src="/favicon.png"
+      src="/PICS/favicon.png"
       alt="DevSpark Logo"
       className="w-10 h-10"
     />
