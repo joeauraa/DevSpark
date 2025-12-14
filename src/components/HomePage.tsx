@@ -1,4 +1,4 @@
-import { Code2, Zap, Globe, FileCode, Play, Terminal, Hexagon, Box, Coffee, Type, Braces, Gem, Package, Cog, Server, FileJson, Smartphone, Layers } from 'lucide-react';
+import { Code2, Zap, Globe, FileCode, Play, Terminal, Hexagon, Box, Coffee, Type, Braces, Gem, Package, Cog, Server, FileJson, Smartphone, Layers, Github as GithubIcon, Facebook as FacebookIcon, Instagram as InstagramIcon, Mail } from 'lucide-react';
 
 interface HomePageProps {
   onStartCoding: () => void;
@@ -113,13 +113,56 @@ export default function HomePage({ onStartCoding }: HomePageProps) {
               </div>
             ))}
           </div>
+
+
+
+
+
+          
+          <div className="border-t border-slate-800/50 pt-8">
+            <div className="flex flex-col items-center gap-4">
+              <div className="flex items-center gap-2 text-slate-300">
+                <Code2 className="w-5 h-5 text-[#3b82f6]" />
+                <h3 className="text-lg font-semibold">About Developer</h3>
+              </div>
+              <p className="text-slate-400 text-center max-w-2xl text-sm leading-relaxed">
+                Developed by <span className="text-white font-medium">Yousef Magdy</span> — Yousef Magdy is a skilled Web Developer, Python Programmer, PCB Designer, and Robotics & Cyber Security Specialist with over 5 years of experience in HTML, CSS, Java, and Python, creating secure and innovative digital solutions 
+              </p>
+
+              <div className="flex flex-wrap items-center justify-center gap-4 mt-4">
+                <a href="https://github.com/joeauraa" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/50 rounded-lg text-slate-300 hover:text-white transition-all duration-200 hover:scale-105">
+                  <GithubIcon className="w-4 h-4" />
+                  <span className="text-sm font-medium">GitHub</span>
+                </a>
+
+                <a href="https://facebook.com/share/1BQEwhbSXg/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/50 rounded-lg text-slate-300 hover:text-white transition-all duration-200 hover:scale-105">
+                  <FacebookIcon className="w-4 h-4" />
+                  <span className="text-sm font-medium">Facebook</span>
+                </a>
+
+                <a href="https://instagram.com/joeauraa" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/50 rounded-lg text-slate-300 hover:text-white transition-all duration-200 hover:scale-105">
+                  <InstagramIcon className="w-4 h-4" />
+                  <span className="text-sm font-medium">Instagram</span>
+                </a>
+
+                <a href="mailto:yousefmagdyhassann@gmail.com" className="flex items-center gap-2 px-4 py-2 bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/50 rounded-lg text-slate-300 hover:text-white transition-all duration-200 hover:scale-105">
+                  <Mail className="w-4 h-4" />
+                  <span className="text-sm font-medium">Contact</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+
+
+        
       </main>
+      
 
       <footer className="border-t border-slate-700 mt-20">
         <div className="max-w-7xl mx-auto px-6 py-8">
-          <p className="text-center text-slate-500 text-sm">
-            Build amazing things with code
+          <p className="text-center text-slate-400 text-sm py-6 border-t border-slate-800/50 mt-8">
+            © 2026 <span className="font-semibold text-white">DevSpark™</span>. All Rights Reserved.
           </p>
         </div>
       </footer>
